@@ -12,7 +12,7 @@ interface SpecTableProps {
 const SpecTable = ({ specs }: SpecTableProps) => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
+      <table className="min-w-full bg-white border border-steel rounded-lg shadow-md">
         <thead className="bg-brand text-white">
           <tr>
             <th className="px-6 py-3 text-left text-sm font-semibold">Model</th>
@@ -26,7 +26,7 @@ const SpecTable = ({ specs }: SpecTableProps) => {
             <tr
               key={index}
               className={`${
-                index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
+                index % 2 === 0 ? 'bg-concrete' : 'bg-white'
               } hover:bg-brand-light transition-colors`}
             >
               <td className="px-6 py-4 text-sm text-gray-900 font-medium">{spec.model}</td>

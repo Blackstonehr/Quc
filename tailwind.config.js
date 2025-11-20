@@ -57,7 +57,11 @@ export default {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
-        }
+        },
+        graphite: '#2e2e2e',
+        concrete: '#f5f4f2',
+        blueprint: '#1e75bb',
+        steel: '#797979'
       },
       fontFamily: {
         sans: ['Inter', 'Segoe UI', 'Roboto', 'sans-serif']

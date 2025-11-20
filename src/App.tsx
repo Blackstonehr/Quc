@@ -6,6 +6,7 @@ import Installation from './pages/Installation';
 import DataCertifications from './pages/DataCertifications';
 import CaseStudies from './pages/CaseStudies';
 import Contact from './pages/Contact';
+import TestPage from './pages/TestPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/data-certifications" element={<DataCertifications />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/test" element={<TestPage />} />
         </Routes>
       </Layout>
     </Router>

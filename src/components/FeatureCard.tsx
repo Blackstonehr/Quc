@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react';
+
 interface FeatureCardProps {
-  icon?: string;
+  icon?: ReactNode;
   title: string;
   description: string;
 }
@@ -8,7 +10,7 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
       {icon && (
-        <div className="text-4xl mb-4 text-brand-accent">
+        <div className="mb-4 text-brand-accent">
           {icon}
         </div>
       )}

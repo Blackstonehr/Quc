@@ -1,5 +1,27 @@
 import { Link, useLocation } from 'react-router-dom';
 
+interface NavLinkProps {
+  to: string;
+  label: string;
+  isActive: boolean;
+  onClick?: () => void;
+  className?: string;
+}
+
+const NavLink = ({ to, label, isActive, onClick, className = '' }: NavLinkProps) => (
+  <Link
+    to={to}
+    onClick={onClick}
+    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+      isActive
+        ? 'bg-brand-accent text-brand'
+        : 'text-white hover:bg-brand-accent/20'
+    } ${className}`}
+  >
+    {label}
+  </Link>
+);
+
 const Navigation = () => {
   const location = useLocation();
 
@@ -11,6 +33,11 @@ const Navigation = () => {
     { path: '/case-studies', label: 'Case Studies' },
     { path: '/contact', label: 'Contact' },
   ];
+
+  const toggleMobileMenu = () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu?.classList.toggle('hidden');
+  };
 
   return (
     <nav className="bg-brand text-white shadow-lg">
@@ -24,27 +51,20 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-1">
             {navLinks.map((link) => (
-              <Link
+              <NavLink
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? 'bg-brand-accent text-brand'
-                    : 'text-white hover:bg-brand-accent/20'
-                }`}
-              >
-                {link.label}
-              </Link>
+                label={link.label}
+                isActive={location.pathname === link.path}
+              />
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-md hover:bg-brand-accent/20"
-            onClick={() => {
-              const mobileMenu = document.getElementById('mobile-menu');
-              mobileMenu?.classList.toggle('hidden');
-            }}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
           >
             <svg
               className="w-6 h-6"
@@ -65,21 +85,14 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         <div id="mobile-menu" className="hidden md:hidden pb-4">
           {navLinks.map((link) => (
-            <Link
+            <NavLink
               key={link.path}
               to={link.path}
-              className={`block px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === link.path
-                  ? 'bg-brand-accent text-brand'
-                  : 'text-white hover:bg-brand-accent/20'
-              }`}
-              onClick={() => {
-                const mobileMenu = document.getElementById('mobile-menu');
-                mobileMenu?.classList.add('hidden');
-              }}
-            >
-              {link.label}
-            </Link>
+              label={link.label}
+              isActive={location.pathname === link.path}
+              onClick={toggleMobileMenu}
+              className="block"
+            />
           ))}
         </div>
       </div>

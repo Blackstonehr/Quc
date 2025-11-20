@@ -5,22 +5,22 @@ import CTASection from '../components/CTASection';
 const Home = () => {
   const features = [
     {
-      icon: '🌊',
+      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
       title: 'Superior Flow Management',
       description: 'Advanced design ensures optimal water flow while capturing debris and sediment, preventing blockages in storm drainage systems.',
     },
     {
-      icon: '🔧',
+      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
       title: 'Easy Installation',
       description: 'Quick and straightforward installation process that integrates seamlessly with existing infrastructure, minimizing downtime and labor costs.',
     },
     {
-      icon: '💪',
+      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
       title: 'Durable Construction',
       description: 'Built with industrial-grade materials to withstand harsh weather conditions and heavy loads, ensuring long-term reliability.',
     },
     {
-      icon: '♻️',
+      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
       title: 'Environmentally Friendly',
       description: 'Helps protect waterways by filtering pollutants and debris before they enter the storm water system, supporting environmental compliance.',
     },
