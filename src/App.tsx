@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home';
+import HomeEnhanced from './pages/HomeEnhanced';
 import Product from './pages/Product';
 import Installation from './pages/Installation';
 import DataCertifications from './pages/DataCertifications';
@@ -15,7 +15,7 @@ function App() {
       <Navigation />
       <main className="pt-20">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeEnhanced />} />
           <Route path="/product" element={<Product />} />
           <Route path="/installation" element={<Installation />} />
           <Route path="/data-certifications" element={<DataCertifications />} />
