@@ -38,7 +38,7 @@ const Installation = () => {
       <Hero
         title="Installation Guide"
         subtitle="Professional installation procedures for optimal performance"
-        backgroundImage="/images/product-install.jpg"
+        backgroundImage="/images/hero_grate.png"
       />
 
       {/* Installation Overview */}
@@ -64,7 +64,7 @@ const Installation = () => {
       </section>
 
       {/* Installation Steps */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-16 bg-brand-light blueprint-grid">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-8 text-center">

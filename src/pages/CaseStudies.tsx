@@ -11,7 +11,7 @@ const CaseStudies = () => {
       />
 
       {/* Introduction */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white blueprint-grid">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-brand mb-6">
@@ -34,8 +34,8 @@ const CaseStudies = () => {
               title="City of Riverside - Municipal Stormwater Management"
               subtitle="Pilot Program | Municipal Application"
               content="The City of Riverside faced recurring issues with storm drain blockages in a high-traffic commercial district, leading to street flooding during heavy rainfall events. After evaluating several solutions, the city selected Quicktrap for a pilot installation at three critical locations. The results exceeded expectations: within the first year, maintenance calls for blockages dropped by 85%, and street flooding incidents were eliminated entirely. The city has since expanded the program to include 50 additional locations across the municipality. 'Quicktrap has transformed our stormwater management approach,' said the Public Works Director. 'The reduction in emergency maintenance calls alone has paid for the installation costs, and our residents are seeing real improvements in flood prevention.'"
-              imageBefore="/images/case-study-before.jpg"
-              imageAfter="/images/case-study-after.jpg"
+              imageBefore="/images/case_before.png"
+              imageAfter="/images/case_after.png"
               stats={[
                 { label: 'Blockage Reduction', value: '85%' },
                 { label: 'Maintenance Savings', value: '$45K/yr' },
@@ -55,8 +55,8 @@ const CaseStudies = () => {
               title="Westfield Shopping Center - Parking Lot Retrofit"
               subtitle="Retrofit Project | Commercial Application"
               content="Westfield Shopping Center, a 500,000 sq ft retail complex, experienced chronic drainage problems in their parking areas, with standing water creating safety hazards and customer complaints. The existing catch basins were frequently clogged with leaves, trash, and sediment from the surrounding landscape. The facility management team retrofitted 24 existing catch basins with Quicktrap units over a single weekend, minimizing disruption to operations. The impact was immediate and dramatic. Drainage performance improved significantly, standing water issues were resolved, and maintenance requirements decreased by 70%. The shopping center also achieved compliance with updated stormwater regulations, avoiding potential fines. 'The installation was quick, the results were immediate, and our maintenance team loves how easy they are to service,' noted the Facilities Manager. 'This was one of the best infrastructure investments we've made.'"
-              imageBefore="/images/case-study-before.jpg"
-              imageAfter="/images/case-study-after.jpg"
+              imageBefore="/images/case_before.png"
+              imageAfter="/images/case_after.png"
               stats={[
                 { label: 'Maintenance Reduction', value: '70%' },
                 { label: 'Installation Time', value: '2 days' },

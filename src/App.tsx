@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
+import Navigation from './components/layout/Navigation';
+import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Installation from './pages/Installation';
@@ -11,17 +12,20 @@ import TestPage from './pages/TestPage';
 function App() {
   return (
     <Router>
-      <Layout>
+      <Navigation />
+      <main className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/installation" element={<Installation />} />
           <Route path="/data-certifications" element={<DataCertifications />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/test" element={<TestPage />} />
         </Routes>
-      </Layout>
+      </main>
+      <Footer />
     </Router>
   );
 }

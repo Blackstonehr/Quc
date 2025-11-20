@@ -35,8 +35,21 @@ const Product = () => {
       <Hero
         title="Product Specifications"
         subtitle="Engineered for performance in municipal and commercial applications"
-        backgroundImage="/images/product-install.jpg"
+        backgroundImage="/images/hero_concrete.png"
       />
+
+      {/* Product Render Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <img 
+              src="/images/render_quicktrap.png" 
+              alt="Quicktrap Product Render" 
+              className="w-full h-auto rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Product Overview */}
       <section className="py-16 bg-white">
@@ -59,7 +72,7 @@ const Product = () => {
       </section>
 
       {/* Specifications Table */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-16 bg-brand-light blueprint-grid">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-8 text-center">

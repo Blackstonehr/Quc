@@ -45,7 +45,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-brand-accent">Quicktrap</div>
+            <img src="/images/logo_wordmark.png" alt="Quicktrap" className="h-8" />
           </Link>
 
           {/* Desktop Navigation */}

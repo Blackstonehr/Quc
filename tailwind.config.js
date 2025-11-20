@@ -63,6 +63,16 @@ export default {
         blueprint: '#1e75bb',
         steel: '#797979'
       },
+      spacing: {
+        18: "4.5rem",
+        22: "5.5rem",
+        30: "7.5rem",
+        36: "9rem",
+      },
+      fontSize: {
+        "hero": ["3.25rem", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
+        "title": ["2rem", { lineHeight: "1.2" }],
+      },
       fontFamily: {
         sans: ['Inter', 'Segoe UI', 'Roboto', 'sans-serif']
       }

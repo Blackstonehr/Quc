@@ -5,22 +5,22 @@ import CTASection from '../components/CTASection';
 const Home = () => {
   const features = [
     {
-      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
+      icon: <img src="/images/icon_flow.png" alt="Flow Management" className="h-12 w-12" />,
       title: 'Superior Flow Management',
       description: 'Advanced design ensures optimal water flow while capturing debris and sediment, preventing blockages in storm drainage systems.',
     },
     {
-      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
+      icon: <img src="/images/icon_installation.png" alt="Easy Installation" className="h-12 w-12" />,
       title: 'Easy Installation',
       description: 'Quick and straightforward installation process that integrates seamlessly with existing infrastructure, minimizing downtime and labor costs.',
     },
     {
-      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
+      icon: <img src="/images/icon_structural.png" alt="Durable Construction" className="h-12 w-12" />,
       title: 'Durable Construction',
       description: 'Built with industrial-grade materials to withstand harsh weather conditions and heavy loads, ensuring long-term reliability.',
     },
     {
-      icon: <span className="h-12 w-12 bg-brand-accent block rounded-sm" />,
+      icon: <img src="/images/icon_environment.png" alt="Environmentally Friendly" className="h-12 w-12" />,
       title: 'Environmentally Friendly',
       description: 'Helps protect waterways by filtering pollutants and debris before they enter the storm water system, supporting environmental compliance.',
     },
@@ -31,7 +31,7 @@ const Home = () => {
       <Hero
         title="Keep Storm Lines Open"
         subtitle="Advanced stormwater management solutions that prevent blockages and protect your infrastructure"
-        backgroundImage="/images/hero.jpg"
+        backgroundImage="/images/hero_aerial.png"
         ctaText="Learn More"
         ctaLink="#features"
       />
