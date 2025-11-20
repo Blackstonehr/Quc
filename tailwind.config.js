@@ -13,6 +13,11 @@ export default {
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
+        brand: {
+          DEFAULT: '#4a4a4a',         // dark industrial grey
+          accent: '#d7b86a',          // metallic gold-bronze
+          light: '#f2f2f2'            // light grey
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -53,8 +58,11 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
         }
+      },
+      fontFamily: {
+        sans: ['Inter', 'Segoe UI', 'Roboto', 'sans-serif']
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 }
