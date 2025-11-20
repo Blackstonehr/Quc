@@ -76,7 +76,7 @@ const DataCertifications = () => {
       />
 
       {/* Performance Data */}
-      <section className="py-16 bg-white">
+      <section className="py-section lg:py-sectionLg bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-6">
@@ -89,7 +89,7 @@ const DataCertifications = () => {
 
             <div className="space-y-8">
               {performanceClaims.map((section, index) => (
-                <div key={index} className="bg-brand-light rounded-lg p-6">
+                <div key={index} className="bg-concrete rounded-card p-inner shadow-card">
                   <h3 className="text-2xl font-bold text-brand mb-4">
                     {section.category}
                   </h3>
@@ -109,7 +109,7 @@ const DataCertifications = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-section lg:py-sectionLg bg-concrete">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-6 text-center">
@@ -123,7 +123,7 @@ const DataCertifications = () => {
               {certifications.map((cert, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow"
+                  className="bg-white rounded-card shadow-card p-inner text-center hover:shadow-cardHover transition"
                 >
                   <div className="text-4xl mb-3">🏆</div>
                   <h3 className="text-lg font-bold text-brand mb-2">
@@ -140,7 +140,7 @@ const DataCertifications = () => {
       </section>
 
       {/* Testing & Validation */}
-      <section className="py-16 bg-white">
+      <section className="py-section lg:py-sectionLg bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-6">
@@ -151,7 +151,7 @@ const DataCertifications = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-brand-light rounded-lg p-6">
+              <div className="bg-concrete rounded-card p-inner shadow-card">
                 <h3 className="text-xl font-semibold text-brand mb-3">
                   Laboratory Testing
                 </h3>
@@ -175,7 +175,7 @@ const DataCertifications = () => {
                 </ul>
               </div>
 
-              <div className="bg-brand-light rounded-lg p-6">
+              <div className="bg-concrete rounded-card p-inner shadow-card">
                 <h3 className="text-xl font-semibold text-brand mb-3">
                   Field Validation
                 </h3>
@@ -204,7 +204,7 @@ const DataCertifications = () => {
       </section>
 
       {/* Documentation */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-section lg:py-sectionLg bg-concrete">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand mb-6">
@@ -215,7 +215,7 @@ const DataCertifications = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white rounded-lg shadow-md p-4 flex items-center justify-between hover:shadow-lg transition-shadow">
+              <div className="bg-white rounded-card shadow-card p-4 flex items-center justify-between hover:shadow-cardHover transition">
                 <div>
                   <h4 className="font-semibold text-brand">Performance Test Reports</h4>
                   <p className="text-sm text-gray-600">Detailed laboratory test results</p>
@@ -227,7 +227,7 @@ const DataCertifications = () => {
                 </button>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-4 flex items-center justify-between hover:shadow-lg transition-shadow">
+              <div className="bg-white rounded-card shadow-card p-4 flex items-center justify-between hover:shadow-cardHover transition">
                 <div>
                   <h4 className="font-semibold text-brand">CAD Drawings</h4>
                   <p className="text-sm text-gray-600">AutoCAD and Revit files</p>
@@ -239,7 +239,7 @@ const DataCertifications = () => {
                 </button>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-4 flex items-center justify-between hover:shadow-lg transition-shadow">
+              <div className="bg-white rounded-card shadow-card p-4 flex items-center justify-between hover:shadow-cardHover transition">
                 <div>
                   <h4 className="font-semibold text-brand">Installation Specifications</h4>
                   <p className="text-sm text-gray-600">Complete installation guide</p>
@@ -251,7 +251,7 @@ const DataCertifications = () => {
                 </button>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-4 flex items-center justify-between hover:shadow-lg transition-shadow">
+              <div className="bg-white rounded-card shadow-card p-4 flex items-center justify-between hover:shadow-cardHover transition">
                 <div>
                   <h4 className="font-semibold text-brand">Certification Documents</h4>
                   <p className="text-sm text-gray-600">All compliance certificates</p>
